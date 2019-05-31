@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>MU123 Graphplotter</title>
+	<link href="lib/css/mu123flash.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="lib/javascript/swfobject.js"></script>
+</head>
+<script>
+function myFunction() {
+  window.resizeTo(800,680);
+}
+</script>
+
+<style>
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+</style>
+<body class="content" onload="myFunction()">
+	<div class="flash" id="flash">
+		<p>
+			Your browser is not currently able to play this Flash resource. Please check the top of this browser page to see
+			if there is a security restriction for running scripts or Active X controls. If there is a security message,
+			you should be able to right click on it for options and then choose to allow blocked content in order to play
+			this Flash resource.
+		</p>
+		<p>
+			If the above security issue is not present, then you may not have the
+			latest version of Flash Player installed. <a href="http://www.macromedia.com/go/getflashplayer">Please
+			install the latest Flash Player</a> to use this Flash resource.
+		</p>
+	</div>
+	<script type="text/javascript">
+			var s1 = new SWFObject("graphplotter.swf?path=.","single","780","580","7");
+			s1.write("flash");
+	</script>
+</body>
+</html>
